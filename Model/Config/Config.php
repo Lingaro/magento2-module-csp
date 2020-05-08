@@ -3,7 +3,6 @@
 namespace Orba\Csp\Model\Config;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Framework\UrlInterface;
 
 /**
  * Class Config
@@ -40,5 +39,16 @@ class Config
         ScopeConfigInterface $scopeConfig
     ) {
         $this->scopeConfig = $scopeConfig;
+    }
+
+    /**
+     * @return int
+     */
+    public function isReportUri() : int
+    {
+        return (int) $this->scopeConfig->getValue(
+            self::CONFIG_PATH_ORBA_CSP_GENERAL_REPORT_URI,
+            ScopeConfigInterface::SCOPE_TYPE_DEFAULT
+        );
     }
 }
