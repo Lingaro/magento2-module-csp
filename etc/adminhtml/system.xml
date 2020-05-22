@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="orba_csp" translate="label" sortOrder="400" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Orba CSP</label>
+            <tab>security</tab>
+            <resource>Orba_Csp::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Configuration</label>
+                <field id="report_uri" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="0"
+                       showInStore="0" canRestore="1">
+                    <label>Use built-in reporting</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable this config to save reports to a log file on the server. Config is ignored if you specify a different endpoint in XML.</comment>
+                </field>
+                <field id="link" translate="label" type="label" sortOrder="11" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <frontend_model>Orba\Csp\Model\Config\Frontend\ReportUri</frontend_model>
+                    <depends>
+                        <field id="report_uri">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
