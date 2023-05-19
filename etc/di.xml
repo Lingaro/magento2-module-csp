@@ -1,20 +1,26 @@
 <?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
+ */
+-->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Orba\Csp\Logger\Logger">
+    <type name="Lingaro\Csp\Logger\Logger">
         <arguments>
-            <argument name="name" xsi:type="string">orbaCSPLogger</argument>
+            <argument name="name" xsi:type="string">lingaroCSPLogger</argument>
             <argument name="handlers" xsi:type="array">
-                <item name="debug" xsi:type="object">Orba\Csp\Logger\Handler\Client</item>
+                <item name="debug" xsi:type="object">Lingaro\Csp\Logger\Handler\Client</item>
             </argument>
         </arguments>
     </type>
-    <type name="Orba\Csp\Controller\Report\Index">
+    <type name="Lingaro\Csp\Controller\Report\Index">
         <arguments>
-            <argument name="logger" xsi:type="object">Orba\Csp\Logger\Logger</argument>
+            <argument name="logger" xsi:type="object">Lingaro\Csp\Logger\Logger</argument>
         </arguments>
     </type>
     <type name="Magento\Csp\Model\Mode\ConfigManager">
-        <plugin name="orba_csp_config_manager_plugin" type="Orba\Csp\Plugin\ConfigManagerPlugin" sortOrder="10"/>
+        <plugin name="lingaro_csp_config_manager_plugin" type="Lingaro\Csp\Plugin\ConfigManagerPlugin" sortOrder="10"/>
     </type>
 </config>

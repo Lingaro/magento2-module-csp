@@ -1,7 +1,13 @@
 <?php
+
+/**
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
+ */
+
 declare(strict_types=1);
 
-namespace Orba\Csp\Controller\Adminhtml\Report;
+namespace Lingaro\Csp\Controller\Adminhtml\Report;
 
 use Magento\Backend\App\Action;
 use Magento\Framework\App\Action\HttpGetActionInterface;
@@ -15,7 +21,7 @@ use Magento\Framework\Filesystem;
 
 /**
  * Class Download
- * @package Orba\Csp\Controller\Adminhtml\Report
+ * @package Lingaro\Csp\Controller\Adminhtml\Report
  */
 class Download extends Action implements HttpGetActionInterface
 {
@@ -23,7 +29,7 @@ class Download extends Action implements HttpGetActionInterface
     /**
      *
      */
-    const ADMIN_RESOURCE = 'Orba_Csp::config';
+    const ADMIN_RESOURCE = 'Lingaro_Csp::config';
     /**
      * Url to this controller
      */
