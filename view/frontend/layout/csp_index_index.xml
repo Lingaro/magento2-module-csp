@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="content">
+			<block class="Lingaro\Csp\Block\Index\Index" name="index.index" template="Lingaro_Csp::index/index.phtml"/>
+		</referenceContainer>
+	</body>
+</page>

@@ -1,0 +1,25 @@
+{
+    "name": "lingaro/module-csp",
+    "description": "Module for CSP",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lingaro sp. z o.o.",
+            "homepage": "https://lingarogroup.com/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.1.3||~7.2.0||~7.3.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Lingaro\\Csp\\": ""
+        }
+    },
+    "version": "2.0.0"
+}

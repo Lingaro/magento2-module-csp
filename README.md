@@ -1,6 +1,6 @@
-# Mage2 Module Orba Csp
+# Mage2 Module Lingaro Csp
 
-    ``orba/module-csp``
+    ``lingaro/module-csp``
 
  - [Main Functionalities](#markdown-header-main-functionalities)
  - [Installation](#markdown-header-installation)
@@ -17,8 +17,8 @@
 
 ### Type 1: Zip file
 
- - Unzip the zip file in `app/code/Orba`
- - Enable the module by running `php bin/magento module:enable Orba_Csp`
+ - Unzip the zip file in `app/code/Lingaro`
+ - Enable the module by running `php bin/magento module:enable Lingaro_Csp`
  - Apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
 
@@ -29,8 +29,8 @@
     - public repository `packagist.org`
     - public github repository as vcs
  - Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
- - Install the module composer by running `composer require orba/module-csp`
- - enable the module by running `php bin/magento module:enable Orba_Csp`
+ - Install the module composer by running `composer require lingaro/module-csp`
+ - enable the module by running `php bin/magento module:enable Lingaro_Csp`
  - apply database updates by running `php bin/magento setup:upgrade`\*
  - Flush the cache by running `php bin/magento cache:flush`
 
@@ -46,7 +46,7 @@
 	- frontend > csp/index/index
 
  - Plugin
-	- beforeS - Orba\Csp > Plugin\Orba\Csp
+	- beforeS - Lingaro\Csp > Plugin\Lingaro\Csp
 
 
 ## Attributes
