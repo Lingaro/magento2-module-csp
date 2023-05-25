@@ -1,13 +1,18 @@
 <?php
 
-namespace Orba\Csp\Model\Config\Frontend;
+/**
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
+ */
+
+namespace Lingaro\Csp\Model\Config\Frontend;
 
 use Magento\Backend\Block\Template\Context;
 use Magento\Config\Block\System\Config\Form\Field;
 use Magento\Framework\Data\Form\Element\AbstractElement;
-use Orba\Csp\Controller\Adminhtml\Report\Download;
-use Orba\Csp\Controller\Report\Index;
-use Orba\Csp\Logger\Handler\Client;
+use Lingaro\Csp\Controller\Adminhtml\Report\Download;
+use Lingaro\Csp\Controller\Report\Index;
+use Lingaro\Csp\Logger\Handler\Client;
 
 class ReportUri extends Field
 {

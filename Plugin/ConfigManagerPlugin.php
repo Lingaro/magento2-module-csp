@@ -1,14 +1,19 @@
 <?php
 
-namespace Orba\Csp\Plugin;
+/**
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
+ */
+
+namespace Lingaro\Csp\Plugin;
 
 use Magento\Csp\Model\Mode\ConfigManager;
 use Magento\Csp\Model\Mode\Data\ModeConfigured;
-use \Orba\Csp\Model\Config\Config as CspConfig;
+use \Lingaro\Csp\Model\Config\Config as CspConfig;
 
 /**
  * Class ConfigManagerPlugin
- * @package Orba\Csp\Plugin
+ * @package Lingaro\Csp\Plugin
  */
 class ConfigManagerPlugin
 {

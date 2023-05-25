@@ -1,12 +1,17 @@
 <?php
 
-namespace Orba\Csp\Model\Config;
+/**
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
+ */
+
+namespace Lingaro\Csp\Model\Config;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
 /**
  * Class Config
- * @package Orba\Csp\Model\Config
+ * @package Lingaro\Csp\Model\Config
  */
 class Config
 {
@@ -20,9 +25,9 @@ class Config
         self::CONFIG_PATH_CSP_MODE_STOREFRONT_REPORT_URI
     ];
 
-    const CONFIG_PATH_ORBA_CSP_GENERAL_STOREFRONT_MODE = "orba_csp/general/storefront_mode";
-    const CONFIG_PATH_ORBA_CSP_GENERAL_ADMIN_MODE = "orba_csp/general/admin_mode";
-    const CONFIG_PATH_ORBA_CSP_GENERAL_REPORT_URI = "orba_csp/general/report_uri";
+    const CONFIG_PATH_LINGARO_CSP_GENERAL_STOREFRONT_MODE = "lingaro_csp/general/storefront_mode";
+    const CONFIG_PATH_LINGARO_CSP_GENERAL_ADMIN_MODE = "lingaro_csp/general/admin_mode";
+    const CONFIG_PATH_LINGARO_CSP_GENERAL_REPORT_URI = "lingaro_csp/general/report_uri";
 
     const REPORT_URI = "/csp/report/";
 
@@ -47,7 +52,7 @@ class Config
     public function isReportUri() : int
     {
         return (int) $this->scopeConfig->getValue(
-            self::CONFIG_PATH_ORBA_CSP_GENERAL_REPORT_URI,
+            self::CONFIG_PATH_LINGARO_CSP_GENERAL_REPORT_URI,
             ScopeConfigInterface::SCOPE_TYPE_DEFAULT
         );
     }

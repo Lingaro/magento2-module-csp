@@ -1,12 +1,12 @@
 {
-    "name": "orba/module-csp",
+    "name": "lingaro/module-csp",
     "description": "Module for CSP",
     "type": "magento2-module",
     "license": "MIT",
     "authors": [
         {
-            "email": "info@orba.co",
-            "name": "Orba Sp. z o.o."
+            "name": "Lingaro sp. z o.o.",
+            "homepage": "https://lingarogroup.com/"
         }
     ],
     "minimum-stability": "dev",
@@ -18,8 +18,8 @@
             "registration.php"
         ],
         "psr-4": {
-            "Orba\\Csp\\": ""
+            "Lingaro\\Csp\\": ""
         }
     },
-    "version": "1.0.0"
+    "version": "2.0.0"
 }
